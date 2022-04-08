@@ -1,0 +1,60 @@
+.page-header{
+  flex: 0 0 auto;
+
+  &__container{
+    .container();
+    max-width: none;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 147px;
+    padding-left: 293px;
+    padding-right: 293px;
+    background-color: rgba(222, 222, 222, 0.98);
+  }
+
+  @supports (backdrop-filter: blur(20px)) {
+    &__container {
+      background-color: rgba(222, 222, 222, 0.5);
+      backdrop-filter: blur(20px);
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    padding: 15px 40px;
+    outline: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid @black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: @black;
+  }
+
+  &__nav-link {
+    /* Стили ссылок навигации */
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: @black;
+    text-decoration: none;
+    margin-right: 50px;
+
+    &:hover {
+      /* Стили ссылок по наведению мыши */
+      transition-duration: 0.5s;
+      color: @red_dark;
+    }
+  }
+
+
+
+}
